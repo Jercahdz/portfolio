@@ -25,7 +25,7 @@ body, p, .intro-text, .about-description p, .about-info {
   display: flex;
   justify-content: center;
   background: transparent;
-  padding: 15px 0;
+  padding: 5px 0;
 }
 
 .navbar-content {

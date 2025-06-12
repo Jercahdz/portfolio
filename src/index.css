@@ -79,7 +79,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 25%;
+  object-position: center 10%;
 }
 
 .left-panel::after {
@@ -272,7 +272,8 @@ body {
 
 .name-title {
   font-weight: bold;
-  margin-bottom: 0;
+  margin-top: 80px;
+  margin-bottom: -10px;
 }
 
 /* RESPONSIVE */
@@ -317,7 +318,7 @@ body {
   font-size: 25px;
   font-weight: bold;
   color: #4a5283;
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: 14px;
 }
 
@@ -640,7 +641,7 @@ body {
   padding: 0;
   font-size: 14px;
   text-align: center;
-  max-width: calc(4 * 120px + 3 * 12px); 
+  max-width: calc(4 * 120px + 3 * 12px);
   margin: 0 auto;
 }
 
@@ -888,7 +889,12 @@ body {
   }
 
   .portfolio-pagination span {
-    font-size: 14px;
+    font-weight: bold;
+    font-size: 16px;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    min-width: 40px;
   }
 }
 
@@ -936,9 +942,21 @@ body {
 }
 
 @keyframes fadeInOut {
-  0% { opacity: 0; transform: translateX(-50%) translateY(-10px); }
-  10%, 90% { opacity: 1; transform: translateX(-50%) translateY(0); }
-  100% { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
+  }
+
+  10%,
+  90% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
+  }
 }
 
 .contact-subtitle {
@@ -1210,6 +1228,43 @@ body {
 @media (max-width: 480px) {
   .social-sidebar-container {
     display: none;
+  }
+}
+
+/*
+  STYLES FOR THE SOCIAL FOOTER
+*/
+.social-footer {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .social-footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 0;
+    background-color: #1f1b57;
+  }
+
+  .social-footer a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+  }
+
+  .social-footer a:hover {
+    transform: scale(1.1);
+  }
+
+  .social-footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 }
 

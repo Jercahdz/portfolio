@@ -18,11 +18,11 @@ export default function Navbar() {
         {/* Logo */}
         <div className="navbar-logo">
           <img
-            src="https://cdn.discordapp.com/attachments/1362253861506650266/1363964196089499679/logo_sin.png?ex=6807f225&is=6806a0a5&hm=e4218c7422f70852d08c4ce0c3c58c6d0ee2b8373e20082daf3f4572a406e71d&"
+            src="/images/logo_sin.png"
             alt="logo"
           />
           <img
-            src="https://cdn.discordapp.com/attachments/1362253861506650266/1364464055087005778/logo-18.png?ex=6809c3ad&is=6808722d&hm=9c3095c68e51904e3d78a6d066289ae0873a1dd3469678cccfbe59c710c1ff28&" // <- reemplaza con la ruta correcta si es distinta
+            src="/images/logo-18.png"
             alt="Jerson Hernández"
             className="navbar-name"
           />

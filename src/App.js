@@ -39,7 +39,7 @@ function App() {
             {/* LEFT SIDE - PHOTO */}
             <div className="left-panel">
               <img
-                src="https://cdn.discordapp.com/attachments/1362253861506650266/1364086354685722685/Principal.jpg?ex=680863ea&is=6807126a&hm=9f1b826ccc2860b08c0aaa1ccfcbc3e6f735d03ac05a835bb56b5f759656a5f7&"
+                src="/images/Principal.jpg"
                 alt="Jerson Hernández"
                 className="profile-photo"
               />
@@ -78,7 +78,7 @@ function App() {
 
                 <a href="#contact" className="contact-button">
                   <img
-                    src="https://cdn.discordapp.com/attachments/1362253861506650266/1364470099431526410/logo-88.png?ex=6809c94e&is=680877ce&hm=10aa33b47bec7d6a52b58681f0864fe2a0b6dcb7b7a08ab67bb9b234f7210c8d&"
+                    src="/images/logo-88.png"
                     alt="Contact Icon"
                     className="contact-img"
                   />
@@ -406,9 +406,7 @@ function App() {
                     <div className="info-pair"><strong>Email:</strong><p>hejohc@gmail.com</p></div>
 
                     <div className="signature">
-                      <img src="https://media.discordapp.net/attachments/1362253861506650266/1370525782249574410/logo-43.png?ex=681fd119&is=681e7f99&hm=5405c7e7fb17e66b4b947fecadb80078cf13be5abacc67d791854aed4351037e&=&format=webp&quality=lossless&width=1778&height=582" 
-                      alt="JerCode Logo" 
-                      className="signature-logo" />
+                      <img src="/images/logo-43.webp" alt="Signature" className="signature-logo" />
                     </div>
 
                   </div>
@@ -421,11 +419,22 @@ function App() {
             <div className="social-sidebar-container">
               <div className="social-sidebar-wrapper">
                 <div className="social-sidebar">
-                  <a href="#"><img src="/icons/facebook.png" alt="Facebook" /></a>
-                  <a href="#"><img src="/icons/instagram.png" alt="Instagram" /></a>
-                  <a href="#"><img src="/icons/whatsapp.png" alt="WhatsApp" /></a>
-                  <a href="#"><img src="/icons/linkedin.png" alt="LinkedIn" /></a>
-                  <a href="#"><img src="/icons/github.png" alt="GitHub" /></a>
+                  <a href="https://www.instagram.com/jercode_/" target="_blank" rel="noopener noreferrer">
+                    <img src="/icons/instagram.png" alt="Instagram" />
+                  </a>
+                  <a href="https://www.linkedin.com/in/jerson-hernández-carvajal-021b99228/" target="_blank" rel="noopener noreferrer">
+                    <img src="/icons/linkedin.png" alt="LinkedIn" />
+                  </a>
+                  <a href="https://github.com/Jercahdz" target="_blank" rel="noopener noreferrer">
+                    <img src="/icons/github.png" alt="GitHub" />
+                  </a>
+                  <a
+                    href="https://wa.me/50663585318?text=Hi%20Jerson,%20I%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20get%20in%20touch%20with%20you."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="/icons/whatsapp.png" alt="WhatsApp" />
+                  </a>
 
                   <a href="#" onClick={(e) => e.preventDefault()}>
                     <img src="/icons/logo-44.png" alt="Toggle Icon" />
@@ -433,8 +442,32 @@ function App() {
                 </div>
               </div>
             </div>
-          </div >
-        </div >
+
+            {/* CELLPHONE - SOCIAL MEDIA FOOTER */}
+            <div className="social-footer">
+              <a href="https://www.instagram.com/jercode_/" target="_blank" rel="noopener noreferrer">
+                <img src="/icons/instagram.png" alt="Instagram" />
+              </a>
+              <a href="https://www.linkedin.com/in/jerson-hernández-carvajal-021b99228/" target="_blank" rel="noopener noreferrer">
+                <img src="/icons/linkedin.png" alt="LinkedIn" />
+              </a>
+              <a href="https://github.com/Jercahdz" target="_blank" rel="noopener noreferrer">
+                <img src="/icons/github.png" alt="GitHub" />
+              </a>
+              <a
+                href="https://wa.me/50663585318?text=Hi%20Jerson,%20I%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20get%20in%20touch%20with%20you."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="/icons/whatsapp.png" alt="WhatsApp" />
+              </a>
+
+              <a href="#" onClick={(e) => e.preventDefault()}>
+                <img src="/icons/logo-44.png" alt="Toggle Icon" />
+              </a>
+            </div>
+          </div>
+        </div>
       )
       }
     </>

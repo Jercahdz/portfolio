@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import ReactDOM from "react-dom";
+
 import "../index.css";
 
 const projects = [
@@ -46,9 +48,12 @@ const projects = [
 
 export default function PortfolioSection() {
   const [index, setIndex] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const next = () => setIndex((prev) => (prev + 1) % projects.length);
   const prev = () => setIndex((prev) => (prev - 1 + projects.length) % projects.length);
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   useEffect(() => {
     const handleKey = (e) => {
@@ -69,6 +74,8 @@ export default function PortfolioSection() {
           src={project.image}
           alt={project.title}
           className="portfolio-img"
+          onClick={openModal}
+          style={{ cursor: "pointer" }}
         />
         <div className="portfolio-details">
           <h3>{project.title}</h3>
@@ -95,6 +102,19 @@ export default function PortfolioSection() {
         <span>{index + 1} / {projects.length}</span>
         <button onClick={next}>Next</button>
       </div>
+
+      {isModalOpen &&
+        ReactDOM.createPortal(
+          <div className="modal-overlay">
+            <button className="modal-close" onClick={closeModal}>×</button>
+            <img
+              src={project.image}
+              alt={project.title}
+              className="modal-full-image"
+            />
+          </div>,
+          document.body
+        )}
     </section>
   );
 }

@@ -43,6 +43,21 @@ body {
   flex-direction: column;
 }
 
+.fade-in {
+  animation: fadeInSmooth 0.6s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInSmooth {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .content-wrapper {
   display: flex;
   flex-direction: row;
@@ -89,7 +104,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom right, rgba(26, 20, 73, 0.5), rgba(255, 255, 255, 0.3));
+  background: linear-gradient(to bottom right, rgba(26, 20, 73, 0.2), rgba(255, 255, 255, 0.08));
   mix-blend-mode: overlay;
   pointer-events: none;
   z-index: 1;
@@ -159,7 +174,7 @@ body {
 }
 
 .section {
-  height: 100vh;
+  min-height: 100vh;
   padding: 120px 60px;
   box-sizing: border-box;
   display: flex;
@@ -236,6 +251,7 @@ body {
 @media (max-width: 480px) {
   .section {
     padding: 60px 20px;
+    min-height: 70vh;
   }
 }
 
@@ -272,8 +288,7 @@ body {
 
 .name-title {
   font-weight: bold;
-  margin-top: 80px;
-  margin-bottom: -10px;
+  margin-bottom: 50px;
 }
 
 /* RESPONSIVE */
@@ -318,7 +333,6 @@ body {
   font-size: 25px;
   font-weight: bold;
   color: #4a5283;
-  margin-top: 80px;
   margin-bottom: 14px;
 }
 
@@ -414,10 +428,14 @@ body {
 
 @media (max-width: 480px) {
   .typewriter-wrapper {
+    margin-top: 60px;
+    margin-bottom: 20px;
     font-size: 18px;
   }
 
   .intro-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 14px;
   }
 
@@ -427,6 +445,7 @@ body {
   }
 
   .contact-button {
+    margin-top: 20px;
     padding: 8px 16px;
     font-size: 14px;
     width: 200px;
@@ -482,24 +501,28 @@ body {
 
 .about-info-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   margin-top: 20px;
 }
 
-.about-item {
+.about-info-pair {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
 
-.about-typewriter-label {
+.about-info-pair strong {
   font-size: 14px;
   font-weight: bold;
   color: #4a5283;
-  min-height: 20px;
-  display: block;
   margin-bottom: 4px;
+}
+
+.about-info-pair p {
+  font-size: 14px;
+  color: white;
+  margin: 0;
 }
 
 .about-value {
@@ -559,12 +582,16 @@ body {
 
   .about-info-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
+    text-align: center;
   }
 
-  .about-item {
+  .about-info-pair {
     align-items: center;
-    text-align: center;
+  }
+
+  .about-info-pair strong,
+  .about-info-pair p {
+    font-size: 13px;
   }
 
   .about-typewriter-label,
@@ -590,6 +617,11 @@ body {
   .about-typewriter-label,
   .about-value {
     font-size: 12px;
+  }
+
+  .about-info-pair strong,
+  .about-info-pair p {
+    font-size: 12.5px;
   }
 }
 
@@ -643,14 +675,6 @@ body {
   text-align: center;
   max-width: calc(4 * 120px + 3 * 12px);
   margin: 0 auto;
-}
-
-.resume-divider {
-  width: 100%;
-  height: 1px;
-  background-color: white;
-  margin: 35px 0;
-  display: flex;
 }
 
 /* RESPONSIVE */
@@ -731,7 +755,7 @@ body {
   STYLES FOR THE PROJECTS SECTION
 */
 .portfolio-section {
-  padding: 40px 20px;
+  padding: 40px 5px;
 }
 
 .portfolio-container {
@@ -764,6 +788,48 @@ body {
   margin-bottom: 10px;
   border: 1.5px solid #4a5283;
 }
+
+/* MODAL */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.modal-full-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.modal-close {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  font-size: 36px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10000;
+  transition: transform 0.2s ease;
+}
+
+.modal-close:hover {
+  transform: scale(1.2);
+}
+
 
 /* DETAILS */
 .portfolio-details h3 {
@@ -1275,6 +1341,13 @@ body {
   background-color: #1a1449;
 }
 
+.loader-video {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 /*
   STYLES FOR DIVIDER
 */
@@ -1282,7 +1355,7 @@ body {
   width: 100%;
   height: 1px;
   background-color: white;
-  margin: 20px 0;
+  margin: 20px 0 20px 8px;
 }
 
 /* RESPONSIVE */

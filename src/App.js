@@ -32,7 +32,7 @@ function App() {
       {loading && <Loader fadeOut={fadeOut} />}
 
       {!loading && (
-        <div className="main-container">
+        <div className="main-container fade-in">
           <Navbar />
 
           <div className="content-wrapper">
@@ -65,8 +65,8 @@ function App() {
                       ],
                       autoStart: true,
                       loop: true,
-                      delay: 60,
-                      deleteSpeed: 40
+                      delay: 100,
+                      deleteSpeed: 60
                     }}
                   />
                 </h1>
@@ -87,8 +87,8 @@ function App() {
                       strings: ['CONTACT ME', 'CONTACTAME'],
                       autoStart: true,
                       loop: true,
-                      delay: 60,
-                      deleteSpeed: 40
+                      delay: 100,
+                      deleteSpeed: 60
                     }}
                   />
                 </a>
@@ -104,8 +104,8 @@ function App() {
                       strings: ['About Me', 'Sobre mí'],
                       autoStart: true,
                       loop: true,
-                      delay: 60,
-                      deleteSpeed: 40
+                      delay: 100,
+                      deleteSpeed: 60
                     }}
                   />
                 </h1>
@@ -132,97 +132,32 @@ function App() {
                   </div>
                 </div>
 
-                <hr className="divider" />
+                <hr className="about-divider" />
 
                 <div className="about-info-grid">
-                  <div className="about-item">
-                    <span className="about-typewriter-label">
-                      <Typewriter
-                        options={{
-                          strings: ['Age: | Edad:'],
-                          autoStart: true,
-                          loop: true,
-                          delay: 60,
-                          deleteSpeed: 40,
-                        }}
-                      />
-                    </span>
-                    <span className="about-value">25</span>
+                  <div className="about-info-pair">
+                    <strong>Email: | Correo:</strong>
+                    <p>hejohc@gmail.com</p>
                   </div>
-
-                  <div className="about-item">
-                    <span className="about-typewriter-label">
-                      <Typewriter
-                        options={{
-                          strings: ['Residence: | Residencia:'],
-                          autoStart: true,
-                          loop: true,
-                          delay: 60,
-                          deleteSpeed: 40,
-                        }}
-                      />
-                    </span>
-                    <span className="about-value">Alajuela, Costa Rica</span>
+                  <div className="about-info-pair">
+                    <strong>Residence: | Residencia:</strong>
+                    <p>Costa Rica</p>
                   </div>
-
-                  <div className="about-item">
-                    <span className="about-typewriter-label">
-                      <Typewriter
-                        options={{
-                          strings: ['Phone: | Teléfono:'],
-                          autoStart: true,
-                          loop: true,
-                          delay: 60,
-                          deleteSpeed: 40,
-                        }}
-                      />
-                    </span>
-                    <span className="about-value">+506 6358-5318</span>
+                  <div className="about-info-pair">
+                    <strong>Languages: | Idiomas:</strong>
+                    <p>Spanish, English</p>
                   </div>
-
-                  <div className="about-item">
-                    <span className="about-typewriter-label">
-                      <Typewriter
-                        options={{
-                          strings: ['Email: | Correo:'],
-                          autoStart: true,
-                          loop: true,
-                          delay: 60,
-                          deleteSpeed: 40,
-                        }}
-                      />
-                    </span>
-                    <span className="about-value">hejohc@gmail.com</span>
+                  <div className="about-info-pair">
+                    <strong>Experience: | Experiencia:</strong>
+                    <p>2+ years programming</p>
                   </div>
-
-                  <div className="about-item">
-                    <span className="about-typewriter-label">
-                      <Typewriter
-                        options={{
-                          strings: ['Address: | Dirección:'],
-                          autoStart: true,
-                          loop: true,
-                          delay: 60,
-                          deleteSpeed: 40,
-                        }}
-                      />
-                    </span>
-                    <span className="about-value">Alajuela, Alajuela</span>
+                  <div className="about-info-pair">
+                    <strong>Interest: | Intereses:</strong>
+                    <p>Full-stack development</p>
                   </div>
-
-                  <div className="about-item">
-                    <span className="about-typewriter-label">
-                      <Typewriter
-                        options={{
-                          strings: ['Languages: | Idiomas:'],
-                          autoStart: true,
-                          loop: true,
-                          delay: 60,
-                          deleteSpeed: 40,
-                        }}
-                      />
-                    </span>
-                    <span className="about-value">Spanish, English</span>
+                  <div className="about-info-pair">
+                    <strong>Favorite Stack: | Stack Favorito:</strong>
+                    <p>React, PHP, MySQL</p>
                   </div>
                 </div>
               </section>
@@ -237,8 +172,8 @@ function App() {
                       strings: ['Resume', 'Currículum'],
                       autoStart: true,
                       loop: true,
-                      delay: 60,
-                      deleteSpeed: 40
+                      delay: 100,
+                      deleteSpeed: 60
                     }}
                   />
                 </h1>
@@ -261,7 +196,7 @@ function App() {
                       <li>
                         <strong>System Engineering</strong> - Universidad Fidélitas (2022 - 2025)
                         <p>Bachelor's degree in computer systems engineering, with a focus on database development and databases</p>
-                        <p>Bachillerato en ingeniería de sistemas informáticos, con especialización en desarrollo y bases de datos</p>
+                        <p>Bachillerato en ingeniería en sistemas de computación, con especialización en desarrollo y bases de datos</p>
                       </li>
                       <li>
                         <strong>Scrum Fundamentals</strong> - ScrumStudy (2023)
@@ -292,11 +227,13 @@ function App() {
                     <li>QA Testing</li>
                     <li>Git & GitHub</li>
                     <li>Scrum</li>
+                    <li>Agile Methodologies</li>
+                    <li>Problem Solving</li>
                   </ul>
                 </div>
               </section>
 
-              <hr className="resume-divider" />
+              <hr className="divider" />
 
               {/* PORTFOLIO */}
               <section className="section" id="portfolio">
@@ -306,8 +243,8 @@ function App() {
                       strings: ['Portfolio', 'Portafolio'],
                       autoStart: true,
                       loop: true,
-                      delay: 60,
-                      deleteSpeed: 40
+                      delay: 100,
+                      deleteSpeed: 60
                     }}
                   />
                 </h1>
@@ -324,8 +261,8 @@ function App() {
                       strings: ['CONTACT ME', 'CONTACTAME'],
                       autoStart: true,
                       loop: true,
-                      delay: 60,
-                      deleteSpeed: 40
+                      delay: 100,
+                      deleteSpeed: 60
                     }}
                   />
                 </h1>
@@ -398,12 +335,11 @@ function App() {
                     <h2>Jerson Hernández</h2>
                     <p className="contact-role">Software Engineer & Developer</p>
 
-                    <div className="info-pair"><strong>Age:</strong><p>25</p></div>
+                    <div className="info-pair"><strong>Email:</strong><p>hejohc@gmail.com</p></div>
                     <div className="info-pair"><strong>Residence:</strong><p>Costa Rica</p></div>
                     <div className="info-pair"><strong>Freelance:</strong><p>Available</p></div>
-                    <div className="info-pair"><strong>Address:</strong><p>Alajuela, Alajuela</p></div>
-                    <div className="info-pair"><strong>Phone:</strong><p>+506 6358-5318</p></div>
-                    <div className="info-pair"><strong>Email:</strong><p>hejohc@gmail.com</p></div>
+                    <div className="info-pair"><strong>Experience:</strong><p>2+ years</p></div>
+                    <div className="info-pair"><strong>Specialty:</strong><p>Full-Stack Web Development</p></div>
 
                     <div className="signature">
                       <img src="/images/logo-43.webp" alt="Signature" className="signature-logo" />

@@ -113,8 +113,8 @@ function App() {
                 <div className="about-columns">
                   <div className="about-block">
                     <p>
-                      I'm a passionate software engineer currently pursuing a degree in Systems Engineering.
-                      I have been programming for over 2 years, combining academic learning with hands-on projects.
+                      I'm a dedicated software engineer with a Bachelor's degree in Systems Engineering.
+                      I have over a year of experience in programming, combining academic training with practical, real-world projects.
                     </p>
                     <p>
                       My interests span across full-stack development: from crafting elegant front-end interfaces to building solid back-end systems and working with databases.
@@ -123,8 +123,8 @@ function App() {
 
                   <div className="about-block">
                     <p>
-                      Soy un ingeniero de software apasionado que actualmente estudia Ingeniería en Sistemas.
-                      Llevo más de 2 años programando, combinando formación académica con proyectos prácticos.
+                      Soy un ingeniero en software con título de Bachiller en Ingeniería en Sistemas.
+                      Cuento con más de un año de experiencia en programación, combinando formación académica con proyectos prácticos y reales.
                     </p>
                     <p>
                       Me interesa todo lo relacionado con el desarrollo full-stack: desde diseñar interfaces atractivas hasta construir sistemas back-end robustos y manejar bases de datos.
@@ -149,7 +149,7 @@ function App() {
                   </div>
                   <div className="about-info-pair">
                     <strong>Experience: | Experiencia:</strong>
-                    <p>2+ years programming</p>
+                    <p>1+ year programming</p>
                   </div>
                   <div className="about-info-pair">
                     <strong>Interest: | Intereses:</strong>

@@ -338,7 +338,7 @@ function App() {
                     <div className="info-pair"><strong>Email:</strong><p>hejohc@gmail.com</p></div>
                     <div className="info-pair"><strong>Residence:</strong><p>Costa Rica</p></div>
                     <div className="info-pair"><strong>Freelance:</strong><p>Available</p></div>
-                    <div className="info-pair"><strong>Experience:</strong><p>2+ years</p></div>
+                    <div className="info-pair"><strong>Experience:</strong><p>1+ years</p></div>
                     <div className="info-pair"><strong>Specialty:</strong><p>Full-Stack Web Development</p></div>
 
                     <div className="signature">

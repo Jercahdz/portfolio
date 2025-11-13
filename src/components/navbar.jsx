@@ -66,8 +66,8 @@ export default function Navbar() {
           </button>
           {dropdownOpen && (
             <div className="dropdown-menu">
-              <a href="/cv_JersonHernandez_EN.pdf" download>English</a>
-              <a href="/cv_JersonHernandez_ES.pdf" download>Español</a>
+              <a href="/resume_JersonHernandez_SoftwareEngineer.pdf" download>English</a>
+              <a href="/cv_JersonHernandez_IngenieroEnSistemas.pdf" download>Español</a>
             </div>
           )}
         </div>

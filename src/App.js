@@ -113,21 +113,23 @@ function App() {
                 <div className="about-columns">
                   <div className="about-block">
                     <p>
-                      I'm a dedicated software engineer with a Bachelor's degree in Systems Engineering.
-                      I have over a year of experience in programming, combining academic training with practical, real-world projects.
+                      I'm a passionate Software Engineer with a Bachelor's degree in Systems Engineering (graduated in October 2025).
+                      I've been programming since 2022 and have over a year of professional experience developing real-world projects for clients.
                     </p>
                     <p>
-                      My interests span across full-stack development: from crafting elegant front-end interfaces to building solid back-end systems and working with databases.
+                      I specialize in full-stack development — from creating elegant front-end interfaces to building solid back-end systems and working with databases.
+                      I enjoy designing efficient, scalable, and user-centered solutions.
                     </p>
                   </div>
 
                   <div className="about-block">
                     <p>
-                      Soy un ingeniero en software con título de Bachiller en Ingeniería en Sistemas.
-                      Cuento con más de un año de experiencia en programación, combinando formación académica con proyectos prácticos y reales.
+                      Soy un Ingeniero en Software con el título de Bachiller en Ingeniería en Sistemas (graduado en octubre de 2025).
+                      Programo desde 2022 y cuento con más de un año de experiencia profesional desarrollando proyectos reales para clientes.
                     </p>
                     <p>
-                      Me interesa todo lo relacionado con el desarrollo full-stack: desde diseñar interfaces atractivas hasta construir sistemas back-end robustos y manejar bases de datos.
+                      Me especializo en desarrollo full-stack: desde la creación de interfaces atractivas hasta la construcción de sistemas back-end sólidos y el manejo de bases de datos.
+                      Disfruto diseñar soluciones eficientes, escalables y centradas en el usuario.
                     </p>
                   </div>
                 </div>
@@ -149,7 +151,8 @@ function App() {
                   </div>
                   <div className="about-info-pair">
                     <strong>Experience: | Experiencia:</strong>
-                    <p>1+ year programming</p>
+                    <p>+3 years programming</p>
+                    <p>+1 year professional experience</p>
                   </div>
                   <div className="about-info-pair">
                     <strong>Interest: | Intereses:</strong>
@@ -157,7 +160,7 @@ function App() {
                   </div>
                   <div className="about-info-pair">
                     <strong>Favorite Stack: | Stack Favorito:</strong>
-                    <p>React, PHP, MySQL</p>
+                    <p>React, PHP, Node.js, MySQL</p>
                   </div>
                 </div>
               </section>
@@ -183,8 +186,46 @@ function App() {
                     <h2>Experience / Experiencia</h2>
                     <ul>
                       <li>
-                        <strong>Web Application Developer</strong> - Freelance (2024 - 2025)
-                        <p>Developed a web application using HTML, CSS with Bootstrap, JavaScript, and PHP.</p>
+                        <strong>Full-Stack Development Lead</strong>, Academia Monká
+                        <p>(May 2024 - May 2025)</p>
+                        <p>
+                          Led a team of 4 developers in building a sports management system for 500+ players,
+                          featuring statistics tracking, evaluations, and interactive dashboards (Chart.js).
+                        </p>
+                        <p>
+                          Implemented security architecture including encryption, SQL injection protection,
+                          session validation, and role-based access control.
+                        </p>
+                        <p>
+                          Developed a chatbot for frequent queries and managed the complete QA and testing cycle.
+                        </p>
+                        <p><em>Stack:</em> PHP, JavaScript, MySQL, HTML5, CSS3, Chart.js</p>
+                      </li>
+
+                      <li>
+                        <strong>Frontend Developer</strong>, Personal Project: Portfolio Website
+                        <p>(Jan 2024 - Mar 2024)</p>
+                        <p>
+                          Designed and developed a personal portfolio website with an innovative split-screen layout
+                          combining photo and information panels.
+                        </p>
+                        <p>
+                          Implemented a custom video loader, typewriter text animations, and a Formspree-integrated contact form.
+                        </p>
+                        <p><em>Stack:</em> React, JavaScript, CSS3, TailwindCSS</p>
+                      </li>
+
+                      <li>
+                        <strong>Mobile Developer</strong>, Business Management App
+                        <p>(Jul 2025 - Present)</p>
+                        <p>
+                          Collaborated in a 4-person team to create a mobile business management app with client,
+                          product, billing, and invoice printing modules.
+                        </p>
+                        <p>
+                          Implemented multi-user authentication and analytics dashboards to visualize best-selling products and business metrics.
+                        </p>
+                        <p><em>Stack:</em> React Native, TypeScript</p>
                       </li>
                     </ul>
                   </div>
@@ -195,13 +236,34 @@ function App() {
                     <ul>
                       <li>
                         <strong>System Engineering</strong> - Universidad Fidélitas (2022 - 2025)
-                        <p>Bachelor's degree in computer systems engineering, with a focus on database development and databases</p>
-                        <p>Bachillerato en ingeniería en sistemas de computación, con especialización en desarrollo y bases de datos</p>
+                        <p>
+                          Bachelor's degree in Computer Systems Engineering, focused on full-stack web development, databases, computer networks,
+                          OOP, system analysis and design, agile methodologies, and software quality assurance.
+                        </p>
+                        <p>
+                          Bachillerato en Ingeniería en Sistemas de Computación, enfocado en desarrollo web full-stack, bases de datos, redes de computadoras,
+                          programación orientada a objetos, análisis y diseño de sistemas, metodologías ágiles y aseguramiento de la calidad del software.
+                        </p>
+                      </li>
+                    </ul>
+
+                    <h2>Certifications / Certificaciones</h2>
+                    <ul>
+                      <li>
+                        <strong>CCNA (Cisco Certified Network Associate)</strong> - Cisco Networking Academy
+                        <p>Fundamentals of computer networks, routing, and switching.</p>
                       </li>
                       <li>
-                        <strong>Scrum Fundamentals</strong> - ScrumStudy (2023)
-                        <p>Fundamentals of Scrum methodology and its application in software development.</p>
-                        <p>Fundamentos de la metodología Scrum y su aplicación en el desarrollo de software.</p>
+                        <strong>Scrum Fundamentals Certified</strong> - ScrumStudy
+                        <p>Foundations of Scrum methodology and its application in software development.</p>
+                      </li>
+                      <li>
+                        <strong>English for IT 1</strong> - Cisco Networking Academy
+                        <p>English communication skills focused on the IT industry and workplace.</p>
+                      </li>
+                      <li>
+                        <strong>English for IT 2</strong> - In progress (currently studying)
+                        <p>Advanced English skills for technology, communication, and project collaboration.</p>
                       </li>
                     </ul>
                   </div>
@@ -216,19 +278,25 @@ function App() {
                     <li>JavaScript</li>
                     <li>Node.js</li>
                     <li>React</li>
+                    <li>React Native</li>
+                    <li>TypeScript</li>
                     <li>SQL</li>
                     <li>MySQL</li>
+                    <li>SQL Server</li>
                     <li>Oracle</li>
                     <li>HTML</li>
                     <li>CSS</li>
-                    <li>Figma</li>
                     <li>Bootstrap</li>
                     <li>Tailwind CSS</li>
+                    <li>Figma</li>
+                    <li>Chart.js</li>
                     <li>QA Testing</li>
                     <li>Git & GitHub</li>
                     <li>Scrum</li>
+                    <li>Postman</li>
                     <li>Agile Methodologies</li>
                     <li>Problem Solving</li>
+                    <li>Teamwork</li>
                   </ul>
                 </div>
               </section>
@@ -333,12 +401,12 @@ function App() {
                   {/* INFO */}
                   <div className="contact-info-card">
                     <h2>Jerson Hernández</h2>
-                    <p className="contact-role">Software Engineer & Developer</p>
+                    <p className="contact-role">Software Engineer & Full-Stack Developer</p>
 
                     <div className="info-pair"><strong>Email:</strong><p>hejohc@gmail.com</p></div>
                     <div className="info-pair"><strong>Residence:</strong><p>Costa Rica</p></div>
                     <div className="info-pair"><strong>Freelance:</strong><p>Available</p></div>
-                    <div className="info-pair"><strong>Experience:</strong><p>1+ years</p></div>
+                    <div className="info-pair"><strong>Experience:</strong><p>3+ years</p></div>
                     <div className="info-pair"><strong>Specialty:</strong><p>Full-Stack Web Development</p></div>
 
                     <div className="signature">
@@ -398,9 +466,9 @@ function App() {
                 <img src="/icons/whatsapp.png" alt="WhatsApp" />
               </a>
 
-              <a href="#" onClick={(e) => e.preventDefault()}>
+              <button className="icon-btn">
                 <img src="/icons/logo-44.png" alt="Toggle Icon" />
-              </a>
+              </button>
             </div>
           </div>
         </div>

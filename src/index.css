@@ -216,7 +216,7 @@ body {
 
   .section {
     height: auto;
-    padding: 80px 30px;
+    padding: 60px 30px;
     justify-content: flex-start;
   }
 
@@ -655,7 +655,6 @@ body {
 .resume-block p {
   font-size: 14px;
   margin-bottom: 12px;
-  color: #ddd;
 }
 
 .resume-skills h2 {
@@ -829,7 +828,6 @@ body {
 .modal-close:hover {
   transform: scale(1.2);
 }
-
 
 /* DETAILS */
 .portfolio-details h3 {
@@ -1334,6 +1332,14 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .icon-btn {
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    font-size: 13px;
+  }
+}
 /*
   STYLES FOR LOADER
 */

@@ -440,9 +440,10 @@ function App() {
                     <img src="/icons/whatsapp.png" alt="WhatsApp" />
                   </a>
 
-                  <a onClick={(e) => e.preventDefault()}>
+
+                  <button className="icon-btn-right">
                     <img src="/icons/logo-44.png" alt="Toggle Icon" />
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>

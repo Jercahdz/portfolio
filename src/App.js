@@ -440,7 +440,7 @@ function App() {
                     <img src="/icons/whatsapp.png" alt="WhatsApp" />
                   </a>
 
-                  <a href="#" onClick={(e) => e.preventDefault()}>
+                  <a onClick={(e) => e.preventDefault()}>
                     <img src="/icons/logo-44.png" alt="Toggle Icon" />
                   </a>
                 </div>

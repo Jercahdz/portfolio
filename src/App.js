@@ -440,10 +440,7 @@ function App() {
                     <img src="/icons/whatsapp.png" alt="WhatsApp" />
                   </a>
 
-
-                  <button className="icon-btn-right">
-                    <img src="/icons/logo-44.png" alt="Toggle Icon" />
-                  </button>
+                  <img src="/icons/logo-44.png" alt="Toggle Icon" className="icon-btn-right" />
                 </div>
               </div>
             </div>
@@ -467,9 +464,7 @@ function App() {
                 <img src="/icons/whatsapp.png" alt="WhatsApp" />
               </a>
 
-              <button className="icon-btn">
-                <img src="/icons/logo-44.png" alt="Toggle Icon" />
-              </button>
+                <img src="/icons/logo-44.png" alt="Toggle Icon" className="icon-btn"/>
             </div>
           </div>
         </div>

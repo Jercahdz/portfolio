@@ -59,9 +59,9 @@ function App() {
                     options={{
                       strings: [
                         'Software Engineer',
-                        'Frontend Developer',
-                        'Web Designer',
-                        'Tech Consultant'
+                        'Full-Stack Developer',
+                        'Backend & API Specialist',
+                        'Cloud & AI Enthusiast'
                       ],
                       autoStart: true,
                       loop: true,
@@ -72,8 +72,9 @@ function App() {
                 </h1>
 
                 <p className="intro-text">
-                  I'm a passionate software engineer specialized in crafting modern and responsive web applications.
-                  I blend creativity with clean code to deliver elegant digital solutions, always aiming to provide the best user experience.
+                  Software Engineer focused on building scalable backend systems and modern full-stack applications.
+                  I specialize in APIs, authentication, cloud architecture, and integrating AI to create smart and efficient solutions.
+                  Passionate about clean code, performance, and real-world impact.
                 </p>
 
                 <a href="#contact" className="contact-button">
@@ -113,23 +114,23 @@ function App() {
                 <div className="about-columns">
                   <div className="about-block">
                     <p>
-                      I'm a passionate Software Engineer with a Bachelor's degree in Systems Engineering (graduated in October 2025).
-                      I've been programming since 2022 and have over a year of professional experience developing real-world projects for clients.
+                      I'm a Software Engineer with a Bachelor's degree in Systems Engineering (2025) and hands-on experience building real-world applications.
+                      I specialize in backend and full-stack development, focusing on scalable APIs, secure authentication, and cloud-based solutions.
                     </p>
                     <p>
-                      I specialize in full-stack development — from creating elegant front-end interfaces to building solid back-end systems and working with databases.
-                      I enjoy designing efficient, scalable, and user-centered solutions.
+                      Recently, I've been working on integrating AI into applications, designing CI/CD pipelines, and structuring systems as if they were production-ready environments.
+                      I enjoy solving complex problems and building efficient, maintainable systems.
                     </p>
                   </div>
 
                   <div className="about-block">
                     <p>
-                      Soy un Ingeniero en Software con el título de Bachiller en Ingeniería en Sistemas (graduado en octubre de 2025).
-                      Programo desde 2022 y cuento con más de un año de experiencia profesional desarrollando proyectos reales para clientes.
+                      Soy Ingeniero en Sistemas con un Bachillerato en Ingeniería en Sistemas de Computación (2025) y experiencia práctica desarrollando aplicaciones del mundo real.
+                      Me especializo en desarrollo backend y full-stack, con enfoque en APIs escalables, autenticación segura y soluciones basadas en la nube.
                     </p>
                     <p>
-                      Me especializo en desarrollo full-stack: desde la creación de interfaces atractivas hasta la construcción de sistemas back-end sólidos y el manejo de bases de datos.
-                      Disfruto diseñar soluciones eficientes, escalables y centradas en el usuario.
+                      Recientemente he estado trabajando en la integración de inteligencia artificial en aplicaciones, el diseño de pipelines CI/CD y la estructuración de sistemas como si fueran entornos listos para producción.
+                      Disfruto resolver problemas complejos y construir sistemas eficientes y mantenibles.
                     </p>
                   </div>
                 </div>
@@ -147,7 +148,7 @@ function App() {
                   </div>
                   <div className="about-info-pair">
                     <strong>Languages: | Idiomas:</strong>
-                    <p>Spanish, English</p>
+                    <p>Spanish (Native), English (B2)</p>
                   </div>
                   <div className="about-info-pair">
                     <strong>Experience: | Experiencia:</strong>
@@ -217,15 +218,44 @@ function App() {
 
                       <li>
                         <strong>Mobile Developer</strong>, Business Management App
-                        <p>(Jul 2025 - Present)</p>
+                        <p>(Jul 2025 - Feb 2026)</p>
                         <p>
-                          Collaborated in a 4-person team to create a mobile business management app with client,
-                          product, billing, and invoice printing modules.
+                          Collaborated in a team of 4 developers to build a mobile business management application
+                          with modules for clients, products, billing, and invoice generation.
                         </p>
                         <p>
-                          Implemented multi-user authentication and analytics dashboards to visualize best-selling products and business metrics.
+                          Implemented multi-user authentication including registration, login, password recovery (EmailJS),
+                          and session management.
                         </p>
-                        <p><em>Stack:</em> React Native, TypeScript</p>
+                        <p>
+                          Designed and structured the database architecture and overall application flow.
+                        </p>
+                        <p>
+                          Developed a backup and restore system using Firebase Storage to ensure data persistence and recovery.
+                        </p>
+                        <p>
+                          Focused on building a scalable and user-friendly solution simulating real business environments.
+                        </p>
+                        <p><em>Stack:</em> React Native, TypeScript, Firebase</p>
+                      </li>
+
+                      <li>
+                        <strong>Backend Developer</strong>, AI Training API (Personal Project)
+                        <p>(2026 - Present)</p>
+                        <p>
+                          Developing a scalable REST API for managing training systems, including routines,
+                          exercises, and user progress tracking.
+                        </p>
+                        <p>
+                          Integrating AI to generate personalized training recommendations and improve user experience.
+                        </p>
+                        <p>
+                          Implementing secure authentication using JWT and role-based access control.
+                        </p>
+                        <p>
+                          Designing CI/CD pipelines and cloud deployment architecture to simulate production environments.
+                        </p>
+                        <p><em>Stack:</em> Node.js, PHP, MySQL, REST API, JWT, AI Integration, GitHub Actions</p>
                       </li>
                     </ul>
                   </div>
@@ -249,6 +279,9 @@ function App() {
 
                     <h2>Certifications / Certificaciones</h2>
                     <ul>
+                     <div className="skills-certifications">
+                    <h3>Completed</h3>
+                    </div>
                       <li>
                         <strong>CCNA (Cisco Certified Network Associate)</strong> - Cisco Networking Academy
                         <p>Fundamentals of computer networks, routing, and switching.</p>
@@ -258,12 +291,26 @@ function App() {
                         <p>Foundations of Scrum methodology and its application in software development.</p>
                       </li>
                       <li>
-                        <strong>English for IT 1</strong> - Cisco Networking Academy
-                        <p>English communication skills focused on the IT industry and workplace.</p>
+                        <strong>English for IT 1 & 2 (B2 Level)</strong>
+                        <p>Cisco / CECI / MICITT</p>
                       </li>
+
+                      <div className="skills-certifications">
+                    <h3>In Progress</h3>
+                    </div>
                       <li>
-                        <strong>English for IT 2</strong> - In progress (currently studying)
-                        <p>Advanced English skills for technology, communication, and project collaboration.</p>
+                        <strong>AWS Certified Cloud Practitioner</strong>
+                        <p>Amazon Web Services</p>
+                      </li>
+
+                      <li>
+                        <strong>GitHub Actions & CI/CD Fundamentals</strong>
+                        <p>GitHub</p>
+                      </li>
+
+                      <li>
+                        <strong>Claude 101</strong>
+                        <p>Anthropic</p>
                       </li>
                     </ul>
                   </div>
@@ -272,32 +319,58 @@ function App() {
                 {/* Skills */}
                 <div className="resume-skills">
                   <h2>Skills / Habilidades</h2>
-                  <ul className="skills-grid">
-                    <li>Java</li>
-                    <li>PHP</li>
-                    <li>JavaScript</li>
-                    <li>Node.js</li>
-                    <li>React</li>
-                    <li>React Native</li>
-                    <li>TypeScript</li>
-                    <li>SQL</li>
-                    <li>MySQL</li>
-                    <li>SQL Server</li>
-                    <li>Oracle</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Bootstrap</li>
-                    <li>Tailwind CSS</li>
-                    <li>Figma</li>
-                    <li>Chart.js</li>
-                    <li>QA Testing</li>
-                    <li>Git & GitHub</li>
-                    <li>Scrum</li>
-                    <li>Postman</li>
-                    <li>Agile Methodologies</li>
-                    <li>Problem Solving</li>
-                    <li>Teamwork</li>
-                  </ul>
+                  <div className="skills-category">
+                    <h3>Languages</h3>
+                    <div className="skills-grid">
+                      <span>JavaScript</span>
+                      <span>TypeScript</span>
+                      <span>PHP</span>
+                      <span>Java</span>
+                      <span>C#</span>
+                    </div>
+                  </div>
+
+                  <div className="skills-category">
+                    <h3>Frontend</h3>
+                    <div className="skills-grid">
+                      <span>React</span>
+                      <span>React Native</span>
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>Tailwind</span>
+                    </div>
+                  </div>
+
+                  <div className="skills-category">
+                    <h3>Backend & Database</h3>
+                    <div className="skills-grid">
+                      <span>Node.js</span>
+                      <span>REST APIs</span>
+                      <span>JWT</span>
+                      <span>MySQL</span>
+                      <span>MongoDB</span>
+                    </div>
+                  </div>
+
+                  <div className="skills-category">
+                    <h3>Cloud & Tools</h3>
+                    <div className="skills-grid">
+                      <span>AWS</span>
+                      <span>CI/CD</span>
+                      <span>GitHub Actions</span>
+                      <span>Firebase</span>
+                    </div>
+                  </div>
+
+                  <div className="skills-category">
+                    <h3>Testing & Others</h3>
+                    <div className="skills-grid">
+                      <span>Postman</span>
+                      <span>Selenium</span>
+                      <span>JUnit</span>
+                      <span>Scrum</span>
+                    </div>
+                  </div>
                 </div>
               </section>
 
@@ -406,8 +479,8 @@ function App() {
                     <div className="info-pair"><strong>Email:</strong><p>hejohc@gmail.com</p></div>
                     <div className="info-pair"><strong>Residence:</strong><p>Costa Rica</p></div>
                     <div className="info-pair"><strong>Freelance:</strong><p>Available</p></div>
-                    <div className="info-pair"><strong>Experience:</strong><p>3+ years</p></div>
-                    <div className="info-pair"><strong>Specialty:</strong><p>Full-Stack Web Development</p></div>
+                    <div className="info-pair"><strong>Experience:</strong><p>3+ years (1+ year professional)</p></div>
+                    <div className="info-pair"><strong>Specialty:</strong><p>Full-Stack Development</p></div>
 
                     <div className="signature">
                       <img src="/images/logo-43.webp" alt="Signature" className="signature-logo" />
@@ -464,7 +537,7 @@ function App() {
                 <img src="/icons/whatsapp.png" alt="WhatsApp" />
               </a>
 
-                <img src="/icons/logo-44.png" alt="Toggle Icon" className="icon-btn"/>
+              <img src="/icons/logo-44.png" alt="Toggle Icon" className="icon-btn" />
             </div>
           </div>
         </div>

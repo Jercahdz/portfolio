@@ -279,9 +279,9 @@ function App() {
 
                     <h2>Certifications / Certificaciones</h2>
                     <ul>
-                     <div className="skills-certifications">
-                    <h3>Completed</h3>
-                    </div>
+                      <div className="skills-certifications">
+                        <h3>Completed</h3>
+                      </div>
                       <li>
                         <strong>CCNA (Cisco Certified Network Associate)</strong> - Cisco Networking Academy
                         <p>Fundamentals of computer networks, routing, and switching.</p>
@@ -294,10 +294,14 @@ function App() {
                         <strong>English for IT 1 & 2 (B2 Level)</strong>
                         <p>Cisco / CECI / MICITT</p>
                       </li>
+                      <li>
+                        <strong>Claude 101</strong>
+                        <p>Anthropic</p>
+                      </li>
 
                       <div className="skills-certifications">
-                    <h3>In Progress</h3>
-                    </div>
+                        <h3>In Progress</h3>
+                      </div>
                       <li>
                         <strong>AWS Certified Cloud Practitioner</strong>
                         <p>Amazon Web Services</p>
@@ -308,10 +312,6 @@ function App() {
                         <p>GitHub</p>
                       </li>
 
-                      <li>
-                        <strong>Claude 101</strong>
-                        <p>Anthropic</p>
-                      </li>
                     </ul>
                   </div>
                 </div>
@@ -327,17 +327,22 @@ function App() {
                       <span>PHP</span>
                       <span>Java</span>
                       <span>C#</span>
+                      <span>SQL</span>
+                      <span>Dart</span>
                     </div>
                   </div>
 
                   <div className="skills-category">
-                    <h3>Frontend</h3>
+                    <h3>Mobile & Frontend</h3>
                     <div className="skills-grid">
-                      <span>React</span>
+                      <span>Flutter</span>
                       <span>React Native</span>
-                      <span>HTML</span>
-                      <span>CSS</span>
-                      <span>Tailwind</span>
+                      <span>React</span>
+                      <span>HTML5</span>
+                      <span>CSS3</span>
+                      <span>Bootstrap</span>
+                      <span>Tailwind CSS</span>
+                      <span>Responsive Design</span>
                     </div>
                   </div>
 
@@ -345,30 +350,51 @@ function App() {
                     <h3>Backend & Database</h3>
                     <div className="skills-grid">
                       <span>Node.js</span>
-                      <span>REST APIs</span>
+                      <span>.NET Framework</span>
+                      <span>.NET Core</span>
+                      <span>ASP.NET Web API</span>
+                      <span>RESTful API</span>
                       <span>JWT</span>
                       <span>MySQL</span>
+                      <span>SQL Server (T-SQL)</span>
+                      <span>Oracle (PL/SQL)</span>
+                      <span>SQLite</span>
                       <span>MongoDB</span>
-                    </div>
-                  </div>
-
-                  <div className="skills-category">
-                    <h3>Cloud & Tools</h3>
-                    <div className="skills-grid">
-                      <span>AWS</span>
-                      <span>CI/CD</span>
-                      <span>GitHub Actions</span>
                       <span>Firebase</span>
                     </div>
                   </div>
 
                   <div className="skills-category">
-                    <h3>Testing & Others</h3>
+                    <h3>Cloud & DevOps</h3>
                     <div className="skills-grid">
+                      <span>AWS</span>
+                      <span>EC2</span>
+                      <span>S3</span>
+                      <span>IAM</span>
+                      <span>CI/CD</span>
+                      <span>GitHub Actions</span>
+                    </div>
+                  </div>
+
+                  <div className="skills-category">
+                    <h3>Tools & Testing</h3>
+                    <div className="skills-grid">
+                      <span>Git</span>
+                      <span>GitHub</span>
+                      <span>Swagger</span>
                       <span>Postman</span>
+                      <span>JIRA</span>
                       <span>Selenium</span>
                       <span>JUnit</span>
+                    </div>
+                  </div>
+
+                  <div className="skills-category">
+                    <h3>Methodologies</h3>
+                    <div className="skills-grid">
                       <span>Scrum</span>
+                      <span>Kanban</span>
+                      <span>Agile</span>
                     </div>
                   </div>
                 </div>

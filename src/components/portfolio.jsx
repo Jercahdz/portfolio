@@ -15,9 +15,10 @@ const projects = [
   },
   {
     title: "Academia Monká",
-    images: ["/images/academiaMonka.jpg",
-    "/images/academiaMonka2.jpg",
-    "/images/academiaMonka3.jpg",
+    images: [
+      "/images/academiaMonka.jpg",
+      "/images/academiaMonka2.jpg",
+      "/images/academiaMonka3.jpg",
     ],
     category: "Sports Management System",
     tech: "PHP, JavaScript, MySQL, HTML5, CSS3, Chart.js",
@@ -28,11 +29,12 @@ const projects = [
   },
   {
     title: "Personal Portfolio Website",
-    images: ["/images/portfolioWeb.jpg",
+    images: [
+      "/images/portfolioWeb.jpg",
       "/images/portfolioWeb_about.jpg",
       "/images/portfolioWeb_resume.jpg",
       "/images/portfolioWeb_portfolio.jpg",
-      "/images/portfolioWeb_contact.jpg"
+      "/images/portfolioWeb_contact.jpg",
     ],
     category: "Frontend Project",
     tech: "React, JavaScript, TailwindCSS, CSS3",
@@ -56,6 +58,20 @@ const projects = [
       "Mobile application for business management with modules for clients, products, billing, and invoice generation. Includes multi-user authentication (login, registration, password recovery via EmailJS), database architecture design, and a backup & restore system using Firebase Storage.",
     demoLink: "https://jmanu02.github.io/Mercantweare_Web/",
     codeLink: "https://github.com/Jercahdz/demo_mercantware",
+  },
+  {
+    title: "App Workout",
+    images: [
+      "/images/appwork_register.jpg",
+      "/images/appwork_main.jpg",
+      "/images/appwork_exercises.jpg",
+      "/images/appwork_schema.jpg",
+    ],
+    category: "Mobile Application",
+    tech: "FlutterFlow, Firebase, Dart",
+    description:
+      "Mobile fitness application designed for workout tracking and routine management. Includes user authentication, custom workout creation, exercise tracking with repetitions and parameters, training history, profile management, and an intuitive dashboard for quick access to routines and progress. Built with Firebase for authentication and real-time data management.",
+    codeLink: "https://github.com/JoseBravo2003/Gym-Buddy",
   },
   {
     title: "El Erizo Feliz",

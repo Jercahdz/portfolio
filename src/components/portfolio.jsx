@@ -4,14 +4,20 @@ import "../index.css";
 
 const projects = [
   {
-    title: "AI Training API | Currently under development.",
-    images: ["/images/api_placeholder.jpg"],
+    title: "Workout Tracker API",
+    images: [
+      "/images/workout_api_ai.jpg",
+      "/images/workout_api_workouts.jpg",
+      "/images/workout_api_progress.jpg",
+      "/images/workout_api_actions.jpg",
+      "/images/workout_api_bd.jpg",
+    ],
     category: "Backend / API",
-    tech: "Node.js, PHP, MySQL, REST API, JWT, GitHub Actions, AI Integration",
+    tech: "Node.js, TypeScript, Fastify, MySQL, Prisma, JWT, Ollama, Vitest, Docker, GitHub Actions",
     description:
-      "Scalable REST API for managing training systems, including routines, exercises, and user progress tracking. Integrates AI to generate personalized training recommendations. Implements secure authentication with JWT and role-based access control, along with CI/CD pipelines and cloud-ready architecture.",
+      "Scalable REST API for workout management including routines, exercises, sessions and progress tracking. Integrates a local AI model via Ollama to generate personalized weekly routines based on the user's fitness profile, following an interchangeable provider pattern. Implements JWT authentication with access and refresh tokens, bcrypt password hashing, and role-based access control. Includes unit testing with Vitest and automated CI/CD pipeline via GitHub Actions.",
     demoLink: null,
-    codeLink: "https://github.com/Jercahdz",
+    codeLink: "https://github.com/Jercahdz/workout_tracker_api",
   },
   {
     title: "Academia Monká",
@@ -85,11 +91,19 @@ const projects = [
   },
   {
     title: "E-Tech-Haven",
-    images: ["/images/e-tech-haven.jpg"],
+    images: [
+      "/images/e-tech_index.jpg",
+      "/images/e-tech_muestra.jpg",
+      "/images/e-tech_carrito.jpg",
+      "/images/e-tech_admin.jpg",
+      "/images/e-tech_login.jpg",
+    ],
     category: "Online Store",
     tech: "HTML, CSS, JS, PHP, MySQL",
     description:
-      "University project — online store for tech products with product catalog, shopping cart, and order management.",
+      "Complete e-commerce platform for tech products featuring multi-page navigation, a functional shopping cart, an admin dashboard for product and category management, user authentication system, and a responsive design. Group project focused on polished UI and a smooth user experience.",
+    demoLink: "https://jercahdz.github.io/e-techback/",
+    codeLink: "https://github.com/Jercahdz/e-techback",
   },
   /*
   {

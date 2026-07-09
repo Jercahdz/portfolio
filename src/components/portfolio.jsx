@@ -6,17 +6,17 @@ const projects = [
   {
     title: "Workout Tracker API",
     images: [
+      "/images/workout_api_swagger.jpg",
+      "/images/workout_api_swagger2.jpg",
       "/images/workout_api_ai.jpg",
-      "/images/workout_api_workouts.jpg",
-      "/images/workout_api_progress.jpg",
       "/images/workout_api_actions.jpg",
       "/images/workout_api_bd.jpg",
     ],
     category: "Backend / API",
-    tech: "Node.js, TypeScript, Fastify, MySQL, Prisma, JWT, Ollama, Vitest, Docker, GitHub Actions",
+    tech: "Node.js, TypeScript, Fastify, MySQL, Prisma, JWT, Ollama, Groq, Vitest, Docker, GitHub Actions",
     description:
       "Scalable REST API for workout management including routines, exercises, sessions and progress tracking. Integrates a local AI model via Ollama to generate personalized weekly routines based on the user's fitness profile, following an interchangeable provider pattern. Implements JWT authentication with access and refresh tokens, bcrypt password hashing, and role-based access control. Includes unit testing with Vitest and automated CI/CD pipeline via GitHub Actions.",
-    demoLink: null,
+    demoLink: "https://workouttrackerapi-production.up.railway.app/docs",
     codeLink: "https://github.com/Jercahdz/workout_tracker_api",
   },
   {
